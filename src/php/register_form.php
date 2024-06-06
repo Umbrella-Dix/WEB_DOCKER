@@ -19,8 +19,8 @@ require_once "includes/login_view.inc.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
-
+    <title>Регистрация</title>
+	<link rel="icon" href="/img/иконка3.png" type="image/png">
     <!-- Font Icon -->
     <link rel="stylesheet" href="/fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="/css/css_login/style2.css">

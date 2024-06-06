@@ -6,7 +6,18 @@ require_once "php/includes/signup_view.inc.php";
 require_once "php/includes/login_view.inc.php";
 
 ///ФАЙЛ ФОРМ!!!
-
+///ФАЙЛ ФОРМ!!!
+if (isset($_SESSION["user_type"]) && isset($_SESSION["user_id"])) {
+    if ($_SESSION["user_type"]=="admin") {
+        header("Location: /php/admin_page.php");
+    }
+    else if ($_SESSION["user_type"]=="moderator") {
+        header("Location: /php/index.php");
+    }
+    else if ($_SESSION["user_type"]=="user") {
+        header("Location: /php/index.php");
+    }
+}
 ?>
 
 
@@ -18,7 +29,8 @@ require_once "php/includes/login_view.inc.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Вход</title>
+    <link rel="icon" href="/img/иконка3.png" type="image/png">
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
