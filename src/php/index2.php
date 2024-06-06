@@ -64,7 +64,7 @@ else{header("Location: /php/includes/logout.inc.php");
        
         <div class="collapse navbar-collapse offset header_tab" id="navbarSupportedContent">
           <ul class="nav navbar-nav menu_nav  justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="index.php">Главная</a></li>
+            <li class="nav-item active"><a class="nav-link" href="index.php">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="archive.php">Архив</a></li>
 
             <li class="nav-item submenu dropdown ">
@@ -80,7 +80,7 @@ else{header("Location: /php/includes/logout.inc.php");
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="forum.php">Форум</a></li>
-            <li class="nav-item active"><?php if ($_SESSION["user_type"]=="admin") {
+            <li class="nav-item "><?php if ($_SESSION["user_type"]=="admin") {
                                                echo '<a class="nav-link" href="/php/admin_page.php">Профиль</a></li>'; 
                                             }
                                             else if ($_SESSION["user_type"]=="moderator") {

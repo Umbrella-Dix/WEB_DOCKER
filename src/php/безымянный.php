@@ -72,7 +72,7 @@ else{header("Location: /php/includes/logout.inc.php");
             <li class="nav-item"><a class="nav-link" href="index.php">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="archive.php">Архив</a></li>
 
-            <li class="nav-item submenu dropdown ">
+            <li class="nav-item submenu dropdown active">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы</a>
               <ul class="dropdown-menu">
                 <li class="nav-item"><a class="nav-link" href="blog-details.php">топ 3 аниме</a></li>
@@ -85,7 +85,7 @@ else{header("Location: /php/includes/logout.inc.php");
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="forum.php">Форум</a></li>
-            <li class="nav-item active"><?php if ($_SESSION["user_type"]=="admin") {
+            <li class="nav-item "><?php if ($_SESSION["user_type"]=="admin") {
                                                echo '<a class="nav-link" href="/php/admin_page.php">Профиль</a></li>'; 
                                             }
                                             else if ($_SESSION["user_type"]=="moderator") {
