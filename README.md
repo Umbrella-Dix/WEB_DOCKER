@@ -78,10 +78,10 @@
 1) Если не работает докер в РФ, нужно вставить следующий код во вкладке Docker Engine перейдя в Настройки приложения Docker Desktop:
 
     {
-    "registry-mirrors": [
-        "https://dockerhub.timeweb.cloud",
-        "https://mirror.gcr.io",
-        "https://public.ecr.aws"
+    "registry-mirrors":[
+    "https://dockerhub.timeweb.cloud",
+    "https://mirror.gcr.io",
+    "https://public.ecr.aws"
     ]
     }
     
