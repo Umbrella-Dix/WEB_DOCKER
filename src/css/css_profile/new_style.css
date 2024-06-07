@@ -1,0 +1,242 @@
+.leftContent {
+    min-height: 5px;
+}
+
+@media (max-width: 768px) {
+    .leftContent {
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .leftContent {
+        float: left;
+        width: 668px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .leftContent {
+        width: 828px;
+    }
+}
+
+
+.rightContent {
+    padding: 10px;
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .rightContent {
+        padding-left: 15px;
+        right: -200%;
+        position: fixed;
+        padding-top: 50px;
+        height: 100vh;
+        overflow-y: scroll;
+        z-index: 100;
+        width: 350px;
+        top: 0;
+        background-color: white;
+        transition: all ease-in-out 0.15s;
+        box-shadow: -5px 0px 20px 0px rgba(255, 255, 255, 0.55);
+    }
+}
+
+@media (min-width: 991.98px) {
+    .rightContent {
+        right: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .rightContent {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .rightContent {
+        margin-left: 10px;
+        margin-right: -10px;
+        float: left;
+        min-height: 230px;
+        width: 260px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .rightContent {
+        width: 320px;
+        padding: 10px;
+    }
+}
+
+.rightContent .card-body .list-grouppanel, .rightContent .card-body .list-group {
+    margin: -1.25rem;
+    border-radius: 0;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.rightContent .card-body .list-grouppanel, .rightContent .card-body .list-group {
+    margin: -1.25rem;
+    border-radius: 0;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.2rem;
+}
+
+
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,.table td {
+    padding: 0.6rem;
+    vertical-align: top;
+    border-top: 1px solid #DBE5EA;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #DBE5EA;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #DBE5EA;
+}
+
+.table-sm th,.table-sm td {
+    padding: 0.3rem;
+}
+
+.table-bordered {
+    border: 1px solid #DBE5EA;
+}
+
+.table-bordered th,.table-bordered td {
+    border: 1px solid #DBE5EA;
+}
+
+.table-bordered thead th,.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table-borderless th,.table-borderless td,.table-borderless thead th,.table-borderless tbody + tbody {
+    border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-primary,.table-primary > th,.table-primary > td {
+    background-color: #e6cbc7;
+}
+
+.table-primary th,.table-primary td,.table-primary thead th,.table-primary tbody + tbody {
+    border-color: #d19f98;
+}
+
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group > .form-control,.input-group > .form-control-plaintext,.input-group > .custom-select,.input-group > .custom-file {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.hide {
+    display: none;
+}
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.4em + 0.6rem + 2px);
+    padding: 0.3rem 0.65rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #E0A949;
+    border-radius: 0.2rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        transition: none;
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #495057;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #d79287;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(166, 71, 56, 0.25);
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
